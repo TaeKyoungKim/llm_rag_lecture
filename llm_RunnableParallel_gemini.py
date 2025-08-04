@@ -16,8 +16,8 @@ output_parser = StrOutputParser()
 
 # 1. 키워드 추출 체인
 keyword_prompt = ChatPromptTemplate.from_messages([
-    ("system", "다음 텍스트에서 핵심 키워드 3-5개를 추출해주세요. 키워드만 쉼표로 구분하여 반환하세요."),
-    ("human", "{text}")
+    
+    
 ])
 keyword_chain = keyword_prompt | llm | output_parser
 
